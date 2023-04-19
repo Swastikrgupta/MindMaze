@@ -1,5 +1,6 @@
 # MindMaze
 Welcome to Mind Maze, a treasure hunt game designed to assess your soft skills! In this game, you will be presented with a series of puzzles, situational puzzles, and math problems that will challenge your problem-solving abilities, attention to detail, perseverance, creativity, and logical reasoning.
+website -> https://swastikrgupta.github.io/MindMaze/
 
 ## Soft Skills Assessment
 Here are the soft skills that will be assessed by the different types of tasks in Mind Maze:
