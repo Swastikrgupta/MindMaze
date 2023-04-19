@@ -58,7 +58,7 @@
         </nav>
       </header>
 
-      <div class="text-center text-white"> Checkpoints Colllected: <div id="check_p"> 0 </div>  </div>
+      <div class="text-center text-white" style="font-weight: bold;"> Checkpoints Collected: <div id="check_p" class="font-weight-bold"> 0 </div>  </div>
         
 
       <section >
@@ -68,25 +68,80 @@
 
       <section id="#tasks">
 
-        <div class="container-fluid px-0 top-banner ">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-7 col-md-12">
-                <br>
-                <h1 style="padding-right: 1rem;">Unlock Your Inner Genius: Join the MindMaze Challenge </h1>
-                <p>Ready to Test Your Limits? MindMaze Treasure Hunt Awaits! </p>
-                <ul class="list-group list-unstyled">
-                    <li class="list-group-item-transparent border-0" > <i class="fa-sharp fa-solid fa-square-check" style="color: #000000;"></i> Challenging and engaging gameplay</li>
-                    <li class="list-group-item-transparent border-0"> <i class="fa-sharp fa-solid fa-square-check" style="color: #000000;"></i> Unique and innovative puzzles</li>
-                    <li class="list-group-item-transparent border-0"> <i class="fa-sharp fa-solid fa-square-check" style="color: #000000;"></i> Rewards and incentives</li>
-                  </ul>
-                <div class="mt-4">
-                  <a href="GamePage.html" id="status_c"><button class="main-btn">Start the Hunt! <i class="fa-solid fa-flag-checkered ps-3"></i></button></a>
-                </div>
+        <h1 style="text-align: center; color: white; text-shadow: 3px 3px #533a23; padding-top: 1.5rem;">Tasks</h1>
+    <!-- <p>Ready to Test Your Limits? MindMaze Treasure Hunt Awaits! </p> -->
+
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col  mx-auto px-5">
+          <div class="card h-100 bg-dark bg-gradient" >
+            <img src="game_images/micheile-henderson-ntGM_0dHu2c-unsplash (1) 1.png" class="card-img-top mx-auto img-fluid" alt="..." style="height: 150px; width: 200px; border-radius: 20%;">
+            <div class="card-body bg-white text-center">
+              <div class="card-title text-center">
+                Task: <br> visit <a href="https://drive.google.com/file/d/1Z4Va0u9_Kq-EcegbZrw4clwVvpMI5yyH/view?usp=sharing" target="_blank">here</a> and solve puzzle.
               </div>
+              <input type="text" id="task1" placeholder="Answer here" />
+              <button id="SignupButton1">Submit</button>
             </div>
           </div>
         </div>
+        
+        <div class="col  mx-auto px-5">
+          <div class="card h-100 bg-dark bg-gradient" >
+            <img src="game_images/image 1 (1).png" class="card-img-top mx-auto img-fluid" alt="..." style="height: 150px; width: 200px; border-radius: 20%;">
+            <div class="card-body bg-white text-center">
+              <div class="card-title text-center">
+                Task: <br> See <a href="https://www.youtube.com/embed/7yDmGnA8Hw0?start=0&end=118" target="_blank">this clip</a> and based on situation, when 4 minutes are left, who is stuck on the wrong side of bridge (Remember, all 4 should be safe after 17 minutes)? <br>
+                 1.You &nbsp;         2.Lab assistant   &nbsp;      3.Professor  &nbsp;  4.Janitor <br>
+              </div>
+              <input type="text" id="task2" placeholder="type your answer" />
+              <button id="SignupButton2">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col  mx-auto px-5">
+          <div class="card h-100 bg-dark bg-gradient" >
+            <img src="game_images/image 2.png" class="card-img-top mx-auto img-fluid" alt="..." style="height: 150px; width: 200px; border-radius: 20%;">
+            <div class="card-body bg-white text-center">
+              <div class="card-title text-center">
+                Task: <br> Solve the Jumble word: AECNHXEG <br>
+              </div>
+              <input type="text" id="task3" placeholder="type your answer" />
+              <button id="SignupButton3">Submit</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col  mx-auto px-5">
+          <div class="card h-100 bg-dark bg-gradient" >
+            <img src="game_images/image 4.png" class="card-img-top mx-auto img-fluid" alt="..." style="height: 150px; width: 200px; border-radius: 20%;">
+            <div class="card-body bg-white text-center">
+              <div class="card-title text-center">
+                Task: <br> See <a href="https://www.youtube.com/embed/7Vd1dTBVbFg?start=0&end=144" target="_blank">this clip</a> and tell the passcode <br>
+             
+              </div>
+              <input type="text" id="task4" placeholder="type your answer" />
+              <button id="SignupButton4">Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col  mx-auto px-5">
+          <div class="card h-100 bg-dark bg-gradient" >
+            <img src="game_images/image 3.png" class="card-img-top mx-auto img-fluid" alt="..." style="height: 150px; width: 200px; border-radius: 20%;">
+            <div class="card-body bg-white text-center">
+              <div class="card-title text-center">
+                Task: <br> visit <a href="https://drive.google.com/file/d/10EhwONyJn3zF2wC_3gbYxRm2t8mKyfr5/view?usp=sharing" target="_blank">here</a> and solve puzzle.
+              </div>
+              <input type="text" id="task5" placeholder="Answer here" />
+              <button id="SignupButton5">Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
       </section>
@@ -98,6 +153,121 @@
 
     <script type="module">
       // Import the functions you need from the SDKs you need
+      let chckpoints = document.getElementById('check_p');
+      var checkps = 0;
+      if(checkps==0)
+      {
+        SignupButton1.addEventListener('click',(e) => {
+          var ans = document.getElementById('task1').value;
+          if(ans == "50")
+          {
+            alert('Correct!');
+            checkps++;
+            
+            chckpoints.innerText = checkps;
+          }
+          else
+          {
+            alert('Wrong!')
+          }
+            
+      
+      
+        });
+      }
+      else if(checkps==1)
+      {
+        SignupButton2.addEventListener('click',(e) => {
+           ans = document.getElementById('task2').value;
+          if(ans == "you" || ans == "You")
+          {
+            alert('Correct!');
+            checkps++;
+            
+            chckpoints.innerText = checkps;
+          }
+          else
+          {
+            alert('Wrong!')
+          }
+            
+      
+      
+        });
+      }
+      // else{}
+      else if(checkps==2)
+      {
+        SignupButton3.addEventListener('click',(e) => {
+          var ans = document.getElementById('task3').value;
+          if(ans == "exchange" || ans =="EXCHANGE")
+          {
+            alert('Correct!');
+            checkps++;
+            
+            chckpoints.innerText = checkps;
+          }
+          else
+          {
+            alert('Wrong!')
+          }
+            
+      
+      
+        });
+      }
+      else if(checkps==3)
+      {
+        SignupButton4.addEventListener('click',(e) => {
+          var ans = document.getElementById('task4').value;
+          if(ans == "226")
+          {
+            alert('Correct!');
+            checkps++;
+            
+            chckpoints.innerText = checkps;
+          }
+          else
+          {
+            alert('Wrong!')
+          }
+            
+      
+      
+        });
+      }
+      else 
+      {
+      if(checkps==4)
+      {
+        SignupButton5.addEventListener('click',(e) => {
+          var ans = document.getElementById('task5').value;
+          if(ans == "9")
+          {
+            alert('Correct!');
+            checkps++;
+            
+            chckpoints.innerText = checkps;
+          }
+          else
+          {
+            alert('Wrong!')
+          }
+            
+      
+      
+        });
+      }
+    }
+      // else if()
+      // {
+        
+      // }
+
+      var username = document.getElementById('Username').value;
+      var email = document.getElementById('Email').value;
+      var password = document.getElementById('Password').value;
+      
       
 
 
@@ -106,6 +276,7 @@
         // let userlink = document.getElementById('userlink');
         let signoutlink = document.getElementById('Logout');
         let status_c = document.getElementById('status_c');
+        
         // let currentuser = null;
         // let header = document.getElementById('hh');
 
@@ -117,7 +288,7 @@
         // function Signout_f()
         // {
         //     localStorage.removeItem('user');
-        //     window.location = "index.html";
+        //     window.location = "home-page.html";
         // }    
 
         window.onload = function(){
