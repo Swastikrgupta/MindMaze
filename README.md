@@ -27,13 +27,17 @@ If you would like to set up Mind Maze on your own computer, here are the steps t
 
 ## Implemented Features
 - Puzzles, situational puzzles, and math problems to challenge your problem-solving abilities, attention to detail, perseverance, creativity, and logical reasoning.
-- A leaderboard to track your progress and compete with other players.
-- A dashboard for the admin to track user progress and analyze data.
+- Login/Signup for users
+- Home page with instructions ans about the game.
+- Checkpoints on each correct solution of tasks.
+
 
 ## Additional Future Features
+- A leaderboard to track your progress and compete with other players.
 - Integration with social media platforms to share progress and challenge friends.
 - More challenging puzzles and situational puzzles to keep players engaged and learning.
 - In-game hints and clues to help players who are stuck or struggling with a particular challenge.
+- A dashboard for the admin to track user progress and analyze data.
 - Improved Game UI.
 - Retain details for each user.
 We hope you enjoy playing Mind Maze and that it helps you develop your soft skills!
