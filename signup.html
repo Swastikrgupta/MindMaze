@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Firebase Authentication</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="home.js"></script>
+    <!-- <script type="text/javascript" src="func.js"></script> -->
+</head>
+
+<body>
+  
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Register Now</h1>
+                <input type="text" id="Username" placeholder="Username" />
+                <input type="email" id="Email" placeholder="Email" />
+                <input type="password" id="Password" placeholder="Password" />
+                <span>or </span>
+                
+                <div class="social-container">
+                    <a href="#" class="social"  id="GoogleAuth"><i class="fab fa-google"></i></a>
+                    <!-- <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
+                    <!-- <a href="#" class="social"><i class="fab fa-apple"></i></a> -->
+                </div>
+                <button id="SignupButton">Sign Up</button>
+                <!-- <button  id="Logout">Log Out</button> -->
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign In</h1>
+                
+                <input type="email" id="Email-l" placeholder="Email" />
+                <input type="password" id="Password-l" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+
+                <!-- <span>or use your account</span> -->
+
+                <div class="social-container" style="margin-top: 0px; margin-bottom: 0px;">
+                    <a href="#" class="social" id="GoogleAuth1"><i class="fab fa-google"></i></a>
+                    <!-- <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social" ><i class="fab fa-linkedin-in"></i></a> -->
+                    <!-- <a href="#" class="social"><i class="fab fa-apple"></i></a> -->
+                </div>
+                <button id="LoginButton">Sign In</button>
+                <button  id="Logout">Log Out</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h3>Join the adventure! Login and explore our treasure hunt puzzles that will test your soft skills.</h3>
+                    <p style="margin-bottom: 0px; margin-top: 0px;">Already have an account?</p>
+                    <button class="ghost" id="signIn" style="margin-top: 10px;">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h3>Seeking a fun way to enhance your soft skills? Register now and let the games begin!</h3>
+                    <p style="margin-bottom: 0px; margin-top: 0px;">Don't have an account? </p>
+                    <button class="ghost" id="signUp" style="margin-top: 10px;">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="func.js"></script>
+    <script src="https://kit.fontawesome.com/e2504ed527.js" crossorigin="anonymous"></script>
+  
+  
+</body>
+
+    <script>    
+        // function keepLoggedIn(user)
+        // {
+        //     localStorage.setItem('displayName',JSON.stringify(user));
+        //     localStorage.setItem('username',JSON.stringify(user));
+        //     window.location="home-page.html";
+        // }
+
+
+    </script>
+
+</html>
