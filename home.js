@@ -81,7 +81,7 @@ LoginButton.addEventListener('click',(e) => {
         const dt = new Date();
         update(ref(database,'users/' + user.uid),{
             last_login: dt,
-        }).then(() => {window.location = 'home-page.html'});
+        }).then(() => {window.location = 'index.html'});
         alert('User logged in!');
         
         // ...
@@ -139,7 +139,7 @@ social.addEventListener('click',(e) => {
         const user = result.user;
 
         alert(user.displayName);
-        window.location = 'home-page.html'
+        window.location = 'index.html'
         // IdP data available using getAdditionalUserInfo(result)
         // ...
     })
